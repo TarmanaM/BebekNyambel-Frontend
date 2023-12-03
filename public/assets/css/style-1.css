@@ -1,24 +1,162 @@
-body{
+* {
+    font-family: 'Plus Jakarta Sans';
+}
+
+body {
     margin: 0;
     padding: 0;
-    background-image: url('public/assets/img/backgorund-login.png');
-    background-size: cover; /* Memastikan gambar mencakup seluruh area */
+    background-image: url('/public/assets/img/backgorund-login.png');
+    background-size: cover;
+    /* Memastikan gambar mencakup seluruh area */
     background-position: center;
-    background-repeat:repeat;
-    height: 100vh; /* Set tinggi sesuai kebutuhan */
+    background-repeat: repeat;
+    height: 100vh;
+    /* Set tinggi sesuai kebutuhan */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+h1 {
+    font-size: 36px;
+}
 
+h2 {
+    font-size: 26px;
+}
 
-.test1{
+h3 {
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/public/assets/font/PlusJakartaSans-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main.login-pg {
+    background-color: rgba(44, 69, 31, 0.75);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+}
+
+.login-form {
+    border: 2px solid white;
+    padding: 35px 25px;
+    border-radius: 42px;
+}
+
+.head-login-form img {
+    max-width: 60px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.head-login-form h2 {
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.body-login-form form {
+    text-align: right;
+
+}
+
+.body-login-form form h2 {
+    text-align: left;
+    font-weight: 300;
+    color: white;
+}
+
+.body-login-form form input[type="email"],
+.body-login-form form input[type="password"] {
+    box-shadow: none;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 333px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.body-login-form form input::placeholder {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.body-login-form form input[type="submit"] {
+    text-align: center;
+    width: auto;
+    background-color: white;
+    color: #2C451F;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.body-login-form form input[type="submit"]:hover {
+    background-color: #2C451F;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 18px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.597)
+}
+
+.regist-href {
+    background-color: rgba(255, 255, 255, 0.31);
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    border-radius: 30px;
+    width: auto;
+}
+.regist-href .h3-1{
+    font-weight: 500;
+}
+
+.regist-href .h3-2{
+    font-weight: 100;
+}
+
+.regist-href a{
+
+           
+            
+            
+            
+        
+}
+
+.test1 {
     border: 1px solid aqua;
 }
-.test3{
+
+.test3 {
     border: 1px solid rgb(0, 255, 132);
 }
-.test2{
+
+.test2 {
     border: 1px solid rgb(255, 0, 204);
 }
