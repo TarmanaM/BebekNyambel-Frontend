@@ -44,7 +44,7 @@ main{
 /* Footer */
 footer{
     max-width: 100vw;
-    
+    overflow: hidden;
     background-color: var(--dark-color);
     height: 250px;
     color: white;
@@ -97,10 +97,14 @@ footer .about{
 }
 .icon-bn{
     width: auto;
+    height: 200px;
 }
 .icon-bn img{
     opacity: 0.04;
-    width: 30vw;
+    height: 210%;
+    position: relative;
+    top: -50%;
+    right: -20%;
 }
 
 .Copyright{
