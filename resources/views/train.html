@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test1{
+            border: 1px solid red;
+        }
+        .test2{
+            border: 1px solid blue;
+        }
+       
+        body{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 90vw;
+        }
+        .rekomendasi{
+    color: var(--main-color);
+    width: 84vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memusatkan secara horizontal */
+    justify-content: center; /* Memusatkan secara vertikal */
+    text-align: center; /* (Opsional) Memastikan teks berada di tengah */
+    padding-bottom: 2vw;
+}
+.rekomendasi h2{
+    text-align: center;
+    letter-spacing: 8px;
+    padding: 1.5% 0;
+    border-bottom : 4px solid var(--main-color);
+    width: 39.21%;
+}
+.rekomendasi .box-menu{
+    display: flex;
+    justify-content: center;
+}
+.card-menu{
+    width: fit-content;
+
+}
+.img-card-menu{
+    width: fit-content;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    padding: 20px;
+
+}
+.card-menu .img-card-menu img{
+    width: 100%;
+    border: 2px solid green;
+}
+img{
+    width: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="rekomendasi test1">
+        <h2>REKOMENDASI</h2>
+        <div class="box-menu test2">
+            <div class="card-menu test2">
+                <div class="img-card-menu">
+                    <img src="../../public/assets/img/menu1.jpeg"alt="Img Menu {Dinamis} Not"></div>
+                <h3>{Dinamis} Lorem Ipsum is simply</h3>
+                
+                <h3 class="money">{Dinamis}RP.30.000,00</h3>
+                <a href="../views/menu-detail.html">LIHAT SELENGKAPNYA</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

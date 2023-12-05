@@ -12,6 +12,8 @@
     --nav-hover-color: rgba(176, 176, 176, 0.21);
     --main-font: 'Plus Jakarta Sans';
     --canvas-color: #F3FFEC;
+    --money-color:#2b7e00;   
+    --hover-color:#DCFFD0;
 }
 
 * {
@@ -393,13 +395,96 @@ main.login-pg {
             
         
 }
-/* main */
-
 
 /* Beranda */
+main.beranda{
+    padding:0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memusatkan secara horizontal */
+    justify-content: center; /* Memusatkan secara vertikal */
+    text-align: center; /* (Opsional) Memastikan teks berada di tengah */
+}
+.carosel h1{
+    text-align: center;
+}
+.carosel{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: yellowgreen;
+    height: 70vh;
+}
+.rekomendasi{
+    color: var(--main-color);
+    width: 84vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memusatkan secara horizontal */
+    justify-content: center; /* Memusatkan secara vertikal */
+    text-align: center; /* (Opsional) Memastikan teks berada di tengah */
+    padding-bottom: 2vw;
+}
+.rekomendasi h2{
+    text-align: center;
+    letter-spacing: 8px;
+    padding: 1.5% 0;
+    border-bottom : 4px solid var(--main-color);
+    width: 39.21%;
+}
+.rekomendasi .box-menu{
+    display: flex;
+    justify-content: center;
+}
+.card-menu{
+    width: 30%;
+    display: flex;   
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 25px;   
+    transition: background-color 0.3s ease;
+}
+.card-menu:hover{
+    background-color: var(--hover-color);
+}
 
-
-
+.card-menu .img-card-menu{
+    width: 79.23%;    
+}
+.card-menu .img-card-menu img{
+    width: 100%;
+}
+.card-menu h3{
+    width: 79.23% ;
+    margin: 5px;
+}
+.card-menu h3.money{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--money-color);   
+    margin: 5px;
+}
+.href-btn{
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 22px;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.card-menu:hover .href-btn {
+    opacity: 1;
+}
 
 
 
