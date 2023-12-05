@@ -14,6 +14,7 @@
     --canvas-color: #F3FFEC;
     --money-color:#2b7e00;   
     --hover-color:#DCFFD0;
+    --light-color:#7CBF58;
 }
 
 * {
@@ -468,7 +469,7 @@ main.beranda{
     color: var(--money-color);   
     margin: 5px;
 }
-.href-btn{
+.href-btn-dark{
     background-color: var(--main-color);
     color: white;
     text-decoration: none;
@@ -479,12 +480,122 @@ main.beranda{
     font-size: 14px;
     font-weight: 400;
     margin: 20px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
 }
-.card-menu:hover .href-btn {
+.href-btn-light{
+    background-color: white;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 22px;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px;
+    
+    transition: opacity 0.3s ease;
+}
+.href-btn-dark.custom1{
+    opacity: 0;
+}
+.card-menu:hover .href-btn-dark.custom1 {
     opacity: 1;
 }
+
+/* Home Layanan 1 */
+.home-layanan-green{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 33vh;
+}
+.home-layanan-green .deskripsi{
+    width: 55.35%;
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-layanan-green .deskripsi div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.home-layanan-green .deskripsi div h3 {
+    width: 53.45%;
+    color: white;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.home-layanan-green .deskripsi h2{
+    color: white;
+    text-align: center;
+    letter-spacing: 8px;
+    padding: 1.5% 0;
+    margin: 5px;
+    border-bottom : 4px solid white;
+    width: 50%;
+}
+.home-layanan-green .img{
+    width: 44.65%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-layanan-green .img.img1{
+    background-image: url('../img/catering.jpg');
+}
+.home-layanan-green .img.img2{
+    background-image: url('../img/delivery.png');
+}
+
+.home-layanan-light{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 33vh;
+}
+.home-layanan-light .deskripsi{
+    width: 55.35%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-layanan-light .deskripsi div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.home-layanan-light .deskripsi div h3 {
+    width: 53.45%;
+    color: var(--main-color);
+    font-weight: 400;
+    margin: 5px;
+}
+
+.home-layanan-light .deskripsi h2{
+    color: var(--main-color);
+    text-align: center;
+    letter-spacing: 8px;
+    padding: 1.5% 0;
+    margin: 5px;
+    border-bottom : 4px solid var(--main-color);
+    width: 50%;
+}
+.home-layanan-light .img{
+    width: 44.65%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-layanan-light .img.img1{
+    background-image: url('../img/ramadan.jpg');
+}
+
 
 
 
