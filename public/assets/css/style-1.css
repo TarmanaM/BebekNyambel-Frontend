@@ -596,7 +596,70 @@ main.beranda{
     background-image: url('../img/ramadan.jpg');
 }
 
+/* Menu */
+main.Menu{
+    padding: 1vh 7.78vw;
+}
+/* Path */
+.path{
+    font-family: var(--main-font);
+    color: white;
+    background-color: var(--light-color);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    width: fit-content;
+    
+}
+.path .page{
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+    padding: 0 10px;
+}
+.path .page:hover{
+    background-color: var(--main-color);
+}
+.path .page img{
+    height: 14px;
+    margin-left: 10px;
+}
+.path .page.end img{
 
+    transform: rotate(90deg);
+    
+}
+/* Menu Container */
+.container-menu{
+    width: auto;
+    height: fit-content;
+}
+
+.container-menu .view{
+    display: flex;
+    justify-content: center;
+}
+.container-menu .view .view-btn1{
+    background-color: var(--nav-hover-color);
+    border-top-left-radius: 20px;
+    padding: 5px 0;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.container-menu .view .view-btn2{
+    background-color: white;
+    border-top-right-radius: 20px;
+    padding: 5px 0;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
 
 
 
