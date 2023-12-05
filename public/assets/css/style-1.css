@@ -1,37 +1,117 @@
-* {
+@font-face {
     font-family: 'Plus Jakarta Sans';
-}
-.logo-nav{
-    padding: 0;
-    width: 200px;
-    
-}
-.nav img{
-    width: 60px;
-    background-color: 2px solid purple;
-    vertical-align: middle;
+    src: url('../../public/assets/font/PlusJakartaSans-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.nav h1{
-    vertical-align: middle;
-    display: inline-block;
+:root{
+    --main-color: rgba(44, 69, 31);
+    --nav-hover-color: rgba(176, 176, 176, 0.21);
+    --main-font: 'Plus Jakarta Sans'
 }
-.nav{
-    display: inline-block;
-    vertical-align: middle;
+
+* {
+    font-family: var(--main-font);
+}
+
+
+.merge{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle{
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;    
 }
 
 header{
-    padding: 0 8%;
-    height: 12vh;
-    width:  100vw;
-    background-color: #2C451F;
-    vertical-align: middle;
+    max-width: 100vw;
+    height: 13vh;
+    background-color: var(--main-color) ;
+    padding: 0px 4%;
 }
+
+
+.nav1{
+    width: 31%;
+}
+.nav1 img{
+    height: 80%;
+}
+
+.nav2{
+    width: 61%;
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center;    
+}
+.nav-btn{
+    display: flex;
+    height: 13vh;
+    width: 8vw;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.nav-btn:hover{
+    background-color: var(--nav-hover-color);
+}
+.nav-btn:active{
+    background-color: white;
+    color: var(--main-color);
+    font-weight: 700;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Menampilkan dropdown ketika tombol dihover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
 
 body {
     margin: 0;
     padding: 0;
+    width: 100vw;
     height: 100vh;
     min-height:100vh;
   
@@ -49,12 +129,7 @@ h3 {
     font-size: 14px;
 }
 
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('/public/assets/font/PlusJakartaSans-VariableFont_wght.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 /* Login Page */
 .login-pg-bg{
@@ -136,7 +211,7 @@ main.login-pg {
     border-radius: 22px;
     cursor: pointer;
     padding: 5px 20px;
-    font-family: 'Plus Jakarta Sans';
+    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 650;
 }
@@ -148,7 +223,7 @@ main.login-pg {
     border-radius: 22px;
     cursor: pointer;
     padding: 5px 20px;
-    font-family: 'Plus Jakarta Sans';
+    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 400;
     box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.597)
@@ -180,7 +255,7 @@ main.login-pg {
     border-radius: 22px;
     cursor: pointer;
     padding: 5px 20px;
-    font-family: 'Plus Jakarta Sans';
+    font-family: var(--main-font);
     font-size: 14px;
     font-weight: 650; 
             
