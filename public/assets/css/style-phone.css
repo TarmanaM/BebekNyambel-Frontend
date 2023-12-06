@@ -1,0 +1,9 @@
+@media (width: 372px) {
+    .nav-btn{
+        display: none;
+    }
+    header{
+        background-color: red;
+    }
+
+}
